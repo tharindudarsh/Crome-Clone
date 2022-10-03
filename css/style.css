@@ -21,7 +21,7 @@ body{
 }
 
 
-
+/* header */
 
 
 header{
@@ -33,34 +33,48 @@ header{
 
 }
 
+header>a{
+    color: rgba(0,0,0,.87);
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+    
+    }
 
 a {
     text-decoration: none;
 }
 
-header>a{
-color: rgba(0,0,0,.87);
-display: block;
-font-size: 13px;
-line-height: 24px;
-padding: 6px;
 
-
-}
 
 a:not(#sign-in>a):hover{
 text-decoration: underline;
 }
 
 #apps{
-    width: 24px;
-    height: 24px;
+    display: flex;
+    width: 40px;
+    height: 40px;
     fill: #5f6368;
     border-radius: 100%;
     cursor: pointer;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
+}
+#apps>i{
+    display: flex;
+        width: 6px;
+        height: 25px;
+        
+        justify-content: center;
+        align-items: center;
+       color: #5f6368;
+    
+}
+
+#apps:hover{
+    background-color: rgb(#1b66c9);
 }
 
 
@@ -72,13 +86,19 @@ text-decoration: underline;
     font-size: 14px;
     line-height: 1rem;
     font-weight: 500;
-    color: white;
+    
     background-color: rgb(26,115,232);
     border: 1px solid transparent;
     border-radius: 4px;
     padding: 9px 23px;
     margin: 0 12px 0 8px;
+    min-width: 96px;
+    letter-spacing: 0.25px;
 
+}
+
+#sign-in>a{
+    color: white;
 }
 
 #sign-in:hover{
@@ -88,7 +108,176 @@ text-decoration: underline;
 
 }
 
-#apps:hover{
-    background-color: rgb(#1b66c9);
+#sign-in:focus{
+    background-color: #1c5fba;
+    box-shadow:  0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
 }
 
+#sign-in:active{
+    background-color: #1b63c1;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+
+
+
+
+
+
+/*main*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+
+}
+
+#google-logo{
+    
+    height: calc(100%vm-560px);
+    
+    min-height: 150px;
+    max-height: 290px;
+    
+}
+#google-logo{
+    display: flex;
+    align-items: flex-end;
+}
+
+#search-bar{
+   background-color: rgb(255, 255, 255); 
+   border-radius:33.3px ;
+   width:585px;
+   height:46px;
+   border:0.8px solid #20212423 ;
+   text-align: left;
+}
+#search-bar:hover{
+box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+
+#search-wrapper-out{
+    display: block;
+    padding: 26px;
+    max-height: 160px;
+}
+
+#search-icon{
+    width: 42px;
+    height:46px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #5f6368b0 ;
+    padding-left: 14px;
+}
+
+#search-type-section{
+    width: 494px;
+}
+
+#search-type-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar{
+    display: flex;
+    flex-direction: row;
+}
+
+#search-mike{
+    width: 44px;
+    height:44px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5px;
+}
+
+#search-mike:hover{
+cursor: pointer;
+}
+
+#btnSearch{
+       
+    width: 127.41px;
+    display: flex;
+    align-items: center;
+}
+
+#btnLucky{
+   
+    width: 142.5px;
+    display: flex;
+    align-items: center;
+}
+
+#search-button-wrapper-out{
+  padding: 18px 0 0;
+
+}
+#search-button-wrapper-in{
+    display: flex;
+    justify-content: center;
+}
+
+#btnSearch-wrapper{
+    padding-right: 2.5px;
+    
+}
+
+#btnLucky-wrapper{
+    padding-left: 2.5px;
+}
+
+
+.btn{
+    display: block;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none
+   
+}
+
+.btn:hover{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    
+}
+.btn:focus{
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+#language{
+    
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #202124;
+    text-align: center;
+    font-size: small;
+    color: #4d5156;
+    display: inline-block;
+    line-height: 28px;
+}
+
+#language>a{
+    padding: 0 3px;
+    color: #1A0DAB;
+}
